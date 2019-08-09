@@ -1,6 +1,6 @@
-# Responsive Web Design
-> This repository contains the Responsive Web Design challenges from freeCodeCamp
+# freeCodeCamp Challenges
+> This repository contains the programming challenges from freeCodeCamp's curriculum
 
-| No | Challenge | Link |
-|----|-----------|------|
-| 1 | Tribute Page | [CodePen](https://codepen.io/johndoddy/full/YmObzj)
+| No | Category | Challenge | Link |
+|----|----------|-----------|------|
+| 1 | Responsive Web Design | Tribute Page | [CodePen](https://codepen.io/johndoddy/full/YmObzj) |

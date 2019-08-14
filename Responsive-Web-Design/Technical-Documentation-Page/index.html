@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Python</title>
+</head>
+<body>
+    <nav id="navbar">
+        <header><h1>Python Tutorial</h1></header>
+        <ul>
+            <li><a class="nav-link" href="#About_Python">About Python</a></li>
+            <li><a class="nav-link" href="#Hello_World_In_Python">Hello World in Python</a></li>
+            <li><a class="nav-link" href="#Character_Types">Character Types</a></li>
+            <li><a class="nav-link" href="#Variables">Variables </a></li>
+            <li><a class="nav-link" href="#Data_Types">Data Types</a></li>
+            <li><a class="nav-link" href="#Control_Flow_Statements">Control Flow statements</a></li>
+            <li><a class="nav-link" href="#Reference">Reference</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="About_Python">
+            <!-- Python and its story and uses -->
+            <header><h3>About Python</h3></header>
+            <p>
+                Python was conceived in the late 1980s by Guido van Rossum 
+                at Centrum Wiskunde & Informatica (CWI) in the Netherlands 
+                as a successor to the ABC language (itself inspired by SETL), 
+                capable of exception handling and interfacing with the Amoeba 
+                operating system. Its implementation began in December 1989. 
+            </p>
+            <p>
+                It is an interpreted, multi-paradigm programming language that is easy to use 
+                due to it's capability to allow programs to be written compactly 
+                and readably. Programs written in Python are typically shorter than 
+                those written in C, C++, or Java programs, for several reasons.
+                <ul>
+                    <li>
+                        the high-level data types allow you express complex operations 
+                        in a simple statement.
+                    </li>
+                    <li>
+                        statement grouping is done by indentation instead of beginning and
+                        ending breaks.
+                    </li>
+                    <li>
+                        no variable or argument declarations are necessary.
+                    </li>
+                </ul> 
+            </p>
+            <p>
+                Python is supported by a wide variety of frameworks and libraries which widens it's use cases 
+                significantly.
+                It can be used for;
+                <ol>
+                    <li>Web Development (using frameworks such as Flask and Django</li>
+                    <li>Data Science (using Pandas, Numpy etc)</li>
+                    <li>Machine Learning (using PyTorch, Scipy, Matplotlib, Tensorflow etc)</li>
+                </ol>
+                And many more.
+            </p>
+            <p>
+                To download python and get started, head on to their <a href="https://www.python.org">website.</a><br>
+                When it's installed, launch it in interactive mode and let's move on to Hello World.
+            </p>
+            
+        </section>
+        <section class="main-section" id="Hello_World_In_Python">
+            <!-- hello world in python -->
+            <header><h3>Hello World in Python</h3></header>
+            <p>
+                To begin learning how to use python and getting your hands dirty, you can start by 
+                logging a basic "Hello World" statement to the terminal.<br>
+                Python comes with numerous built-in functions, in this case we can use the print() function.<br>
+                You need to declare the function then pass it an argument which would be what you want to print out.<br>
+                So, that would be - print(argument)
+                We also want what we are printing out to output as exactly what we type in, so we need to wrap it in quotes.<br>
+                <code>>>>print("Hello World")<br>Hello World</code><br>
+                This should print out "Hello World" (without the quotes)to the terminal.
+            </p>
+            <p></p>
+            
+        </section>
+        <section class="main-section" id="Character_Types">
+            <!-- Python character types and basics, arithmetic operators -->
+            <header><h3> Character Types</h3></header>
+            <p>
+                Python supports various character types.
+                <h4>Numbers</h4>
+                Any whole number falls into this category.<br>
+                This python interpreter acts as a simple calculator: you can type an expression at it and it will write the value.<br>
+                It uses operators such as; + for addition, - for subtraction, * for multiplication, / for division, and ** for square.<br>
+                <code>
+                    >>> 2 + 2<br>
+                    4<br>
+                </code>
+                <code>
+                    >>> 50 - 5 * 6<br>
+                    20<br>
+
+                </code>
+                <h4>Strings</h4>
+                Python can also manipulate strings, which can be experssed in several ways. They can be expressed in single quotes ('...')
+                or double quotes ("...").
+                \ can be used to escape quotes.<br>
+                <code>
+                    >>> 'Gummy Worms' # single quotes<br>
+                    Gummy Worms<br>
+                    >>> 'doesn\'t' # \ to escape quotes<br>
+                    doesn't<br>
+                    >>> "She said 'Yes'" # double quotes<br>
+                    She said 'Yes'<br>
+                </code>
+                # is used to "comment out" code which basically tells the interpreter to ignore the following statements which comes after the #, 
+                which is great for documenting your code as shown in the snippet.
+                
+                <h4>Booleans</h4>
+                Python also supports booleans which are statements that evaluate to either true or false.<br>
+                We will use the built-in function type() to check the type of character.<br>
+                <code>
+                    >>>type(True)<br>
+                    class 'bool'<br>
+                </code>
+                <h4> Floats</h4>
+                Python also recogonises floating point numbers (decimal numbers).<br>
+                <code>
+                    >>>type(12.0)<br>
+                    class 'float'<br>
+                </code>
+                
+            </p>
+        </section>
+        <section class="main-section" id="Variables">
+            <!-- Python Data Structures -->
+            <header><h3>Variables</h3></header>
+            <p>
+                We use variables to associate character types to symbolic names.<br>
+                To do that, we need to declare the variable as such;<br>
+                
+                <code>
+                    >>>my_lucky_number = 56<br>
+                </code>
+                Then we can go ahead and print out our variable which should output the value we assigned to it.<br>
+                <code>
+                    >>>my_lucky_number<br>
+                    56<br>
+
+                </code>
+            </p>
+        </section>
+        <section class="main-section" id="Data_Types">
+            <!-- Control flow statements -->
+            <header><h3>Data Types</h3></header>
+            <p>
+                Python knows a number of compound data types, used to group together other values. 
+                The most versatile is the list, which can be written as a list of comma-separated 
+                values (items) between square brackets. Lists might contain items of different types, 
+                but usually the items all have the same type.<br>
+            </p>
+            <p>
+                <code>
+                    >>>list_of_squares = [1, 4, 9, 16, 25]<br>
+                    >>>list_of_squares<br>
+                    [1, 4, 9, 16, 25]<br>
+                </code>
+                Python also supports other data types such as sets and dictionaries.
+
+            </p>
+            
+        </section>
+        <section class="main-section" id="Control_Flow_Statements">
+            <!-- Control flow statements in Python -->
+            <header><h3>Control Flow statements</h3></header>
+            Control flow statements use indentation. Indentation is python's way of grouping statements together.<br>
+            <p>
+                <h4>if...else statements</h4>
+                Python uses the popular if statements just like any other programming language.<br>
+                <code>
+                    my_lucky_number = 56<br>
+                    if my_lucky_number < 100:<br>
+                    ....print("Yes")<br>
+                    elif my_lucky_number > 100:<br>
+                    ....print("Wow")<br>
+                </code>
+                elif here represents else if, which is useful to avoid excessive indentation.
+            </p>
+            <p>
+                <h4>For statements</h4>
+                Python's for statements are used to iterate over items of any sequence(a list or string), in the
+                order that they appear in the sequence.<br>
+                <code>
+                    words = ['car', 'window', 'python']<br>
+                    for word in words:<br>
+                    ....print(word, len(word))<br>
+                    cat 3<br>
+                    window 6<br>
+                    python 6<br>
+                </code>
+            </p>
+            <p>
+                <h4>While loops</h4>
+                A while loop always executes as long as a condition remains true.<br>
+                In the example below, the code will always execute as long as a is less than 5.<br>
+                <code>
+                    a = 1<br>
+                    while a < 5:<br>
+                    ....print(a)<br>
+                    ....a += 1<br>
+                    1<br>
+                    2<br>
+                    3<br>
+                    4<br>
+
+                </code>
+            
+        </section>
+        <section class="main-section" id="Reference">
+            <header><h3>Reference</h3></header>
+            <p>
+            Some of this tutorial was extracted from the python documentation for reference
+            which you can find <a href="https://www.python.org/doc/">here</a>.</p>
+
+        </section>
+    </main>
+
+    
+</body>
+</html>

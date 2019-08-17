@@ -1,7 +1,7 @@
 # freeCodeCamp Challenges
 > This repository contains the programming challenges from freeCodeCamp's curriculum
 
-### Responsive Web Design - [Certificate Issued](https://www.freecodecamp.org/certification/johndoddy/responsive-web-design) 
+### Responsive Web Design - [Certificate Issued](https://www.freecodecamp.org/certification/johndoddy/responsive-web-design) ✔
 
 | No | Challenge | Link |
 |----|-----------|------|

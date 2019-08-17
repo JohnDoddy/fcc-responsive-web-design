@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bahnschrift';
+}
+body {
+    display: flex;
+    flex-direction: column;
+    background: rgb(7, 7, 54);
+}
+#navbar {
+    position: fixed;
+    top: 0;
+    background: rgb(7, 7, 54);
+    width: 100%;
+    height: 4vh;
+    color: white;
+    display: flex;
+    flex-direction: column
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+nav li {
+    list-style: none;
+    cursor: pointer;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+}
+#title {
+    background: rgb(7, 7, 54);
+    margin-top: 2vw;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+#welcome-section {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    height: 100vh;
+    background-image: url(https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80);
+    background-size: 100%;
+    background-blend-mode: color;
+    background-color:rgba(7, 7, 54, 0.836);
+    background-repeat: no-repeat;
+    letter-spacing: 1px;
+}
+.introduction {
+    margin-top: 15%;
+    display: flex;
+    flex-direction: column;
+}
+#intro {
+    text-align: center;
+}
+.introduction h1 {
+    font-size: 3em;
+}
+.introduction  h4 {
+    font-size: 1.1em;
+    margin-top: 1%;
+}
+#projects {
+    background: rgb(7, 7, 54);
+    width: 100%;
+    height: 15vw;
+    margin-top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+}
+#projects h2 {
+    text-align: center;
+    background: rgb(7, 7, 54);
+    
+}
+.project-tile {
+    margin-top: 2%;
+    border-radius: 25px;
+    color: white;
+    background: rgba(255, 255, 255, 0.247);
+    width: 20%;
+    height: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center
+}
+#git-logo {
+    width: 100px;
+    height: 100px;
+}
+
+@media (max-width: 900px) {
+    #navbar {
+        font-size: 80%;
+        height: 2vw;
+    }
+    #title {
+        font-size: 1em;
+        height: 4vw;
+        margin-top: 4vw;
+        text-align: center;
+    }
+    #projects {
+        height: auto;
+        margin-top: -50%;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50%;
+
+    }
+    #projects h2 {
+        height: auto;
+        background: rgb(7, 7, 54);
+    }
+    .project-tile {
+        margin: 2%;
+        width: 70%;
+        height: 35vw;
+        
+    }
+}
